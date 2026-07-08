@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoPrime Motors | Venda de Carros</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <div class="logo">AutoPrime<span>Motors</span></div>
+      <a href="#contacto" class="nav-btn">Contactar</a>
+    </nav>
+
+    <section class="hero-content">
+      <p class="tag">Carros verificados • Financiamento • Retoma</p>
+      <h1>Encontra o carro ideal para ti</h1>
+      <p>Compra carros usados e semi-novos com garantia, inspeção feita e apoio em todo o processo.</p>
+      <div class="actions">
+        <a href="#stock" class="primary">Ver stock</a>
+        <a href="#contacto" class="secondary">Pedir proposta</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="features">
+      <article>
+        <h3>Garantia incluída</h3>
+        <p>Todos os carros têm garantia e histórico verificado.</p>
+      </article>
+      <article>
+        <h3>Financiamento</h3>
+        <p>Simulação rápida com prestações ajustadas ao teu orçamento.</p>
+      </article>
+      <article>
+        <h3>Aceitamos retoma</h3>
+        <p>Avaliamos o teu carro atual e descontamos no novo.</p>
+      </article>
+    </section>
+
+    <section id="stock" class="stock">
+      <div class="section-title">
+        <p>Stock disponível</p>
+        <h2>Carros em destaque</h2>
+      </div>
+
+      <div class="cars">
+        <article class="car-card">
+          <div class="car-img">BMW Série 3</div>
+          <div class="car-info">
+            <h3>BMW 320d Auto</h3>
+            <p>2019 • Diesel • 89.000 km</p>
+            <strong>24.900€</strong>
+            <button onclick="askCar('BMW 320d Auto')">Estou interessado</button>
+          </div>
+        </article>
+
+        <article class="car-card">
+          <div class="car-img">Mercedes Classe A</div>
+          <div class="car-info">
+            <h3>Mercedes A180 AMG</h3>
+            <p>2020 • Diesel • 72.000 km</p>
+            <strong>26.500€</strong>
+            <button onclick="askCar('Mercedes A180 AMG')">Estou interessado</button>
+          </div>
+        </article>
+
+        <article class="car-card">
+          <div class="car-img">Tesla Model 3</div>
+          <div class="car-info">
+            <h3>Tesla Model 3 Long Range</h3>
+            <p>2021 • Elétrico • 61.000 km</p>
+            <strong>31.900€</strong>
+            <button onclick="askCar('Tesla Model 3 Long Range')">Estou interessado</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Queres vender o teu carro?</h2>
+      <p>Envia-nos os dados e damos-te uma avaliação rápida.</p>
+      <a href="#contacto">Avaliar carro</a>
+    </section>
+
+    <section id="contacto" class="contact">
+      <div>
+        <p>Contacto</p>
+        <h2>Fala connosco</h2>
+        <p>Preenche o formulário e respondemos com disponibilidade, preço final e opções de financiamento.</p>
+      </div>
+
+      <form onsubmit="sendLead(event)">
+        <input id="nome" type="text" placeholder="Nome" required />
+        <input id="telefone" type="tel" placeholder="Telemóvel" required />
+        <input id="carro" type="text" placeholder="Carro pretendido" />
+        <textarea id="mensagem" placeholder="Mensagem"></textarea>
+        <button type="submit">Enviar pedido</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 AutoPrime Motors. Site demonstrativo.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
